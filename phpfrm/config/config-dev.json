@@ -1,0 +1,30 @@
+{
+    "path": "C:/www/indumarkbe/public/",
+    "url": "http://localhost:8081/indumarkbe/",
+    "database": {
+        "servername": "localhost",
+        "username": "mateo",
+        "password": "mateo",
+        "database": "indumark"
+    },
+  
+    "secretkey": "bGS6lzFqvvSQ8ALbOxatm7/Vk7mLQyzqaS34Q4oR1ew=",
+    "log-level": {
+        "sql": "debug",
+        "parser": "debug",
+        "manager": "debug",
+        "file": "error",
+        "email": "error",
+        "imap": "error",
+        "cron": "notice",
+        "openfactura": "debug"
+    },
+    "mail": {
+        "user": "soporte@yogi.cl",
+        "name": "Soporte Yogi",
+        "password": "Dsblok!2021",
+        "smtp": "smtp.dreamhost.com",
+        "imap": "imap.dreamhost.com",
+        "pop": "pop.dreamhost.com"
+    }
+}

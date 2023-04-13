@@ -1,0 +1,85 @@
+{
+
+  "Company" : {
+    "clase" :"corsica/framework/usuarios/Company",
+    "metodos": {
+      "filtrar":["filtro"],
+      "guardar":["company"],
+      "listar":[]
+    }
+  }
+  ,
+  "User" : {
+    "clase" :"corsica/framework/usuarios/User",
+    "metodos": {
+      "filtrar":["filtro"]
+      
+    }
+  },
+  "Usuario" : {
+    "clase" :"corsica/framework/usuarios/Usuario",
+    "metodos": {
+      "filtrar":["filtro"],
+      "listar":["idperfil"],
+      "autocompletar":["query"]
+    }
+  },
+  "UsuarioMgr" : {
+    "clase" :"corsica/framework/usuarios/UsuarioMgr",
+    "metodos": {
+      "login":["username","password"],
+      "logininduweb":["idinduweb"],
+      "guardar":["usuario"],
+      "guardarMaster":["usuario","env"],
+      "cargar":["id"],
+      "eliminar":["id",""],
+      "eliminarMaster":["id","idotro","env"],
+      "usernameExiste":["id","username"],
+      "cambiarClave":["id","old","new","new2"],
+      "nuevaClave":["id","password"],
+      "generarClave":["username"]
+
+    }
+  },
+  "Perfil" : {
+    "clase" :"corsica/framework/usuarios/Perfil",
+    "metodos": {
+      "listar":[],
+      "filtrar":["filtro","conusuarios"],
+      "guardar":["perfil"],
+      "eliminar":["id"]
+    }
+  },
+  "Menu" : {
+    "clase" :"corsica/framework/usuarios/Menu",
+    "metodos": {
+      "listar":[],
+      "guardar":["item","checked"],
+      "listarPadres":[],
+      "listarConPerfil":["idperfil"],
+      "cambiaMenuPerfil":["idperfil","idmenu","checked"],
+      "eliminar":["id"]
+      
+    }
+  },
+
+  "Param" : {
+    "clase" :"corsica/framework/usuarios/Param",
+    "metodos": {
+      "guardarParamsProduccion":["params"],
+      "cargarParamsProduccion":[],
+      "guardar":["param"],
+      "getParams":["idperfil"],
+      "cambiarParamPerfil":["idparam","idperfil","general","valor"],
+      "cargarParamPerfiles":["id"],
+      "listar":["idperfil"]
+    }
+  },
+  "Indicador" : {
+    "clase" :"corsica/framework/usuarios/Indicador",
+    "metodos": {
+      "lista":["idusuario"]
+    }
+  }
+}
+

@@ -1,0 +1,115 @@
+{
+
+    "Producto": {
+        "clase": "corsica/indumark/importacion/Producto",
+        "metodos": {
+            "filtrar": ["filtro", "pagina"],
+            "buscar": ["texto","pagina","max"]
+        }
+    },
+    "ProductoGrupo": {
+        "clase": "corsica/indumark/importacion/ProductoGrupo",
+        "metodos": {
+            "listar": [],
+            "filtrar": ["filtro", "pagina"]
+        }
+    },
+    "ProductoSubgrupo": {
+        "clase": "corsica/indumark/importacion/ProductoSubgrupo",
+        "metodos": {
+            "listar": ["idgrupo"],
+            "filtrar": ["filtro", "pagina"]
+        }
+    },
+    "Lista": {
+        "clase": "corsica/indumark/importacion/Lista",
+        "metodos": {
+            "listarGrupos": [],
+            "listar": ["grupo"],
+            "listarNombres": ["grupo"],
+            "filtrar": ["filtro", "pagina"]
+        }
+    },
+    "Proveedor": {
+        "clase": "corsica/indumark/importacion/Proveedor",
+        "metodos": {
+            "eliminar": ["id"],
+            "guardar": ["proveedor"],
+            "autocompletar": ["query"],
+            "buscar": ["texto","pagina","max"],
+            "filtrar": ["filtro", "pagina"]
+        }
+    },
+    "CarpetaPago": {
+        "clase": "corsica/indumark/importacion/CarpetaPago",
+        "metodos": {
+            "guardar": ["pago"],
+            "eliminar": ["id"],
+            "cargar": ["idcarpeta"],
+            "filtrar": ["filtro", "pagina"],
+            "actualizaFi": ["id", "fi"]
+        }
+    },
+    "CarpetaProducto": {
+        "clase": "corsica/indumark/importacion/CarpetaProducto",
+        "metodos": {
+            "guardar": ["carpetaproducto"],
+            "eliminar": ["id"],
+            "cargar": ["idcarpeta"],
+            "filtrar": ["filtro", "pagina"]
+        }
+    },
+    "CarpetaDocumento": {
+        "clase": "corsica/indumark/importacion/CarpetaDocumento",
+        "metodos": {
+            "guardar": ["carpetadocumento"],
+            "eliminar": ["id"],
+            "cargar": ["idcarpeta"],
+            "filtrar": ["filtro", "pagina","sort"]
+        }
+    },
+    "Carpeta": {
+        "clase": "corsica/indumark/importacion/Carpeta",
+        "metodos": {
+            "crear": ["carpeta"],
+            "guardar": ["carpeta"],
+            "filtrar": ["filtro", "pagina","sort"],
+            "cambiarFecha": ["id", "fecha","estado", "fieldname"]
+        }
+    },
+    "CarpetaArchivo": {
+        "clase": "corsica/indumark/importacion/CarpetaArchivo",
+        "metodos": {
+            "test": [],
+            "subir": ["idcarpeta","archivos"],
+            "listar": ["idcarpeta"],
+            "eliminar": ["id"]
+        }
+    },
+    "CarpetaApoderado": {
+        "clase": "corsica/indumark/importacion/CarpetaApoderado",
+        "metodos": {
+            "cargar": ["idcarpeta"],
+            "guardar": ["apoderados"]
+        }
+    },
+    "ExcelManager": {
+        "clase": "corsica/indumark/excel/ExcelManager",
+        "metodos": {
+            "pagos": [],
+            "documentos": ["filtro"],
+            "carpetaProductos": ["idcarpeta"],
+            "cargaCarpetaProductos": ["idcarpeta","productos"],
+            "carpetaProductosUpload": ["idcarpeta","archivo"]
+
+        }
+    }
+    ,
+    "Resumen": {
+        "clase": "corsica/indumark/importacion/Resumen",
+        "metodos": {
+            "totalesPorBanco": []
+
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<html>
+    <h1>Datos del pedido</h1>
+    <ul>
+        <li>Pedido No: <b>{{id}}</b></li>
+        <li>Usuario: <b>{{nombreusuario}}</b></li>
+        <li>Fecha Cirugía: <b>{{fchcompromiso}}</b></li>
+        <li>Procedimiento: <b>{{nota}}</b></li>
+        <li>Doctor: <b>{{nota2}}</b></li>
+        <li>Paciente: <b>{{nota4}}</b></li>
+        <li>Asistente: <b>{{nota3}}</b></li>
+        <li>Rut: <b>{{rutno}}</b></li>
+        <li>Nombre: <b>{{nombre}}</b></li>
+        <li>Neto: <b>{{neto}}</b></li>
+        <li>Direccion de Entrega: <b>{{despachodireccion}}</b></li>
+        <li>Comuna de Entrega: <b>{{despachocomuna}}</b></li>
+    </ul>
+    <h1>Artículos</h1>
+    <table>
+        <tr><th>Código</th><th>Descripción</th><th>Cantidad</th><th>Neto</th><th>Subtotal</th></tr>
+        {{detalles|nvopedido.detalles}}
+    </table>
+
+<br>
+    <p>
+        Atentamente,
+    </p>
+
+    <p>
+        soporte@yogi.cl
+    </p>  
+    <p>
+        Nota: este mail es generado automáticamente.
+    </p> 
+
+
+</html>

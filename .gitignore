@@ -1,0 +1,7 @@
+/vendor/
+/test/
+/sql/
+/log/
+/trash/
+/public/cli/
+*.log

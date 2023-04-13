@@ -1,0 +1,145 @@
+{
+  "impuesto": {
+    "tasaiva": {
+      "valor":19,
+      "descripcion":"Tasa IVA"
+    },
+    "derechosdeautor": {
+      "valor":1.5,
+      "descripcion":"Derechos de Autor"
+    }
+  },
+  "inicio": {
+    "base": {
+      "valor":0,
+      "descripcion":"Indica el template base: 0=indicadores;1=calendario cirujas;ver inicioin.vue"
+    }
+  },
+  "facturacion": {
+    "fmapagofac": {
+      "valor":0,
+      "descripcion":"Forma de pago de facturas (0,30,90)"
+    },
+    "fmapagofacenabled": {
+      "valor":0,
+      "descripcion":"Si el usuario puede cambiar la forma de pago"
+    },
+    "fmapagobol": {
+      "valor":0,
+      "descripcion":"Forma de pago de boletas(0,30,90.."
+    },
+    "fmapagobolenabled": {
+      "valor":0,
+      "descripcion":"Si puede cambiar la forma de pago de boletas"
+    },
+    "fmapagogui": {
+      "valor":30,
+      "descripcion":"Forma de pago de guías de despacho(0,30,90.."
+    },
+    "fmapagoguienabled": {
+      "valor":0,
+      "descripcion":"Si puede cambiar la forma de pago"
+    },
+    "fmapagofgi": {
+      "valor":30,
+      "descripcion":"forma de pago de factura de guias"
+    },
+    "fmapagofgienabled": {
+      "valor":0,
+      "descripcion":"Si puede cambiar la forma de pago de factura guias"
+    }
+  },
+  "produccion": {
+    "tcepillado": {
+      "valor":0,
+      "descripcion":"Tiempo de cepillado (dias)"
+    },
+    "tensamble": {
+      "valor":0,
+      "descripcion":"Tiempo de ensamble (dias)"
+    },
+    "tlaminado": {
+      "valor":0,
+      "descripcion":"Tiempo de laminado (dias)"
+    },
+    "tmoldura": {
+      "valor":0,
+     "descripcion":"Tiempo de moldura (dias)"
+    },
+    "tpiso": {
+      "valor":0,
+      "descripcion":"Tiempo de fab. de piso (dias)"
+    }
+  },
+  "pedidos": {
+    "archivar": {
+      "valor":0,
+      "descripcion":"El usuario puede archivar pedidos (0/1)"
+    },    
+
+    "cambiarOwner": {
+      "valor":0,
+     "descripcion":"El usuario puede cambiar el owner del pedido (0/1)"
+    },
+    "vertodos": {
+      "valor":1,
+      "descripcion":"El usuario puede ver registros de otros usuarios (0/1)"
+    }
+  },
+  "transferencias": {
+    "asignar": {
+      "valor":1,
+      "descripcion":"El usuario puede asignar transferencias  (0/1)"
+    },     
+    "verinvisibles": {
+      "valor":0,
+      "descripcion":"El usuario puede asignar ver invisibles  (0/1)"
+    }, 
+    "verasignadas": {
+      "valor":0,
+      "descripcion":"El usuario puede ver asignadas (0/1)"
+    }
+  },
+  "clientes": {
+    "vertodos": {
+      "valor":1,
+      "descripcion":"El usuario puede ver registros de otros usuarios (0/1)"
+    },
+    "credito": {
+      "valor":0,
+      "descripcion":"El usuario puede cambiar sujeto de crédito"
+    },
+    "propietario": {
+      "valor":0,
+      "descripcion":"El usuario puede cambiar el propietario"
+    },
+    "listaprecioenabled": {
+      "valor":0,
+      "descripcion":"El usuario usa precios de lista"
+    },
+    "listaprecio": {
+      "valor":0,
+      "descripcion":"El usuario puede cambiar la lista de precios"
+    }
+
+  },
+  "cirugias": {
+    "vertodos": {
+      "valor":1,
+      "descripcion":"El usuario puede ver registros de otros usuarios (0/1)"
+    }
+  },
+  "cotizas": {
+    "vertodos": {
+      "valor":1,
+      "descripcion":"El usuario puede ver registros de otros usuarios (0/1)"
+    }
+  },
+
+
+  "leeme": {
+    "uno":"la aplicación toma estos valores",
+    "dos":"luego los rectifica segun el perfil de usuario"
+  }
+}
+

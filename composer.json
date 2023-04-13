@@ -1,0 +1,22 @@
+{
+    "name": "corsica/indumark",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "corsica\\indumark\\": "phpsrc/",
+            "corsica\\framework\\": "phpfrm/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dante Santoni"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.4",
+        "phpoffice/phpspreadsheet": "^1.22",
+        "phpmailer/phpmailer": "^6.6",
+        "fpdf/fpdf": "^1.83",
+        "firebase/php-jwt": "^6.0"
+    }
+}

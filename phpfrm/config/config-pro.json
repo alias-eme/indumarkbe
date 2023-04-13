@@ -1,0 +1,32 @@
+{
+    "path": "C:/www/indumarkbe/public/",
+    "url": "http://192.168.1.20/indumarkbe/",
+    "database": {
+        "servername": "192.168.1.20",
+        "username": "indumark",
+        "password": "indumark670b",
+        "database": "indumark"
+    },
+  
+    "secretkey": "bGS6lzFqvvSQ8ALbOxatm7/Vk7mLQyzqaS34Q4oR1ew=",
+    
+    "log-level": {
+        "sql": "error",
+        "parser": "debug",
+        "manager": "info",
+        "file": "error",
+        "email": "error",
+        "imap": "error",
+        "cron": "notice",
+        "openfactura": "debug"
+    },
+    "mail": {
+        "user": "soporte@yogi.cl",
+        "name": "Soporte Yogi",
+        "password": "Dsblok!2021",
+        "smtp": "smtp.dreamhost.com",
+        "imap": "imap.dreamhost.com",
+        "pop": "pop.dreamhost.com"
+    }
+
+}

@@ -1,0 +1,8 @@
+{
+    "database": {
+        "servername": "localhost",
+        "username": "mateo",
+        "password": "mateo",
+        "database": "indumark"
+    }
+}

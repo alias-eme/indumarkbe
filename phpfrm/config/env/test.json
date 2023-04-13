@@ -1,0 +1,8 @@
+{
+    "database": {
+        "servername": "mysql.corsica.cl",
+        "username": "indumark",
+        "password": "Importaciones.",
+        "database": "blitzen"
+    }
+}

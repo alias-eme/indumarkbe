@@ -1,0 +1,31 @@
+
+
+Header set Access-Control-Allow-Origin: "*"
+Header add Access-Control-Allow-Methods: "*"
+Header add Access-Control-Allow-Headers: "*"
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  #When app is root
+  RewriteBase /cristaltrackbe/
+  #When app is in specific folder
+  #RewriteBase /cristaltrack/
+
+  # Folders to ignore
+  #RewriteCond %{REQUEST_URI} "/api/" [OR]
+  #RewriteCond %{REQUEST_URI} "/api2/" [OR]
+  #RewriteCond %{REQUEST_URI} "/cli/" 
+  #RewriteRule (.*) $1 [L]
+
+  RewriteRule ^(api|api2|cli)($|/) - [L]
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  #
+  RewriteRule . /cristaltrackbe/index.php [L]
+
+  #When app is in specific folder
+  #RewriteRule . /cristaltrack/index.html [L]
+
+
+</IfModule>

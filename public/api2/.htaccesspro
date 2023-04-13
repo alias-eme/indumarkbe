@@ -1,0 +1,32 @@
+Header set Access-Control-Allow-Origin: "*"
+Header set Access-Control-Allow-Methods: "*"
+Header set Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Authorization,Referer,Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control"
+
+<IfModule mod_rewrite.c>
+
+#RewriteEngine On
+#RewriteBase /cristaltrack/api2/
+#… means that if the file with the specified name in the browser doesn’t exist, or the directory in the browser doesn’t exist then procede to the rewrite rule below
+#RewriteCond %{REQUEST_FILENAME} !-f [OR]
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /cristaltrack/api2/index.php [L]
+#RewriteRule ^(.+)$ /cristaltrack/api2/index.php [L,QSA]
+#DEV
+#Options +SymLinksIfOwnerMatch 
+#RewriteEngine On 
+#RewriteBase /cristaltrackbe/api2/
+#RewriteRule ^index.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f 
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /cristaltrackbe/api2/index.php [L]
+
+#PRO
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+RewriteBase /api2/
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /api2/index.php [L]
+
+</IfModule>
